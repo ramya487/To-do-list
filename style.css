@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  h1{
+    text-align: center;
+    margin: 50px 0 30px 0;
+    font-size: 3rem;
+    color:beige;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  input{
+    height: 100%;
+    padding: 10px;
+    width: 25%;
+    border-radius: 0;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+  button{
+    border: 0;
+    border-radius: 0;
+    padding: 10px 20px;
+    background-color: rgb(146, 150, 154);
+    margin: 3px;
+  }
+  button:hover{
+    background-color: azure;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 25%;
+  }
+  .grid-container > div{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255,0.8);
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+  .grid-container > div:hover{
+    background-color: white;
+    border: 1px solid black;
+  }
+  .small{
+    font-style: italic;
+    font-size: 15px;
+    margin: 10px; 
+    text-align: center;
+    color: white;
+  }
